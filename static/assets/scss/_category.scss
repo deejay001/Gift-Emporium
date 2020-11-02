@@ -1,0 +1,211 @@
+/*-------- 4. category style ---------*/
+.section-padding-1 {
+    .container-fluid {
+        padding: 0 80px; 
+        @media #{$xx-layout} {
+            padding: 0 65px;
+        }
+        @media #{$xl-layout} {
+            padding: 0 15px;
+        }
+        @media #{$lg-layout} {
+            padding: 0 30px;
+        }
+        @media #{$md-layout} {
+            padding: 0 40px;
+        }
+        @media #{$xs-layout} {
+            padding: 0 15px;
+        }
+        @media #{$sm-layout} {
+            padding: 0 30px;
+        }
+    }
+}
+
+.category-wrap {
+    position: relative;
+    overflow: hidden;
+    transition: all .35s ease 0s;
+    a {
+        display: block;
+        img {
+            width: 100%;
+            transform: scale(1);
+            transition: all .35s ease 0s;
+        }
+    }
+    .category-content {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 21px 20px 22px;
+        min-width: 180px;
+        z-index: 9;
+        h4 {
+            font-size: 18px;
+            margin: 0;
+            color: #fff;
+            transition: all .35s ease 0s;
+            text-align: center;
+            a {
+                color: #fff;
+            }
+        }
+    }
+    .category-content-3 {
+        position: absolute;
+        left: 40px;
+        top: 50%;
+        transform: translateY(-50%);
+        @media #{$lg-layout} {
+            left: 20px;
+        }
+        @media #{$md-layout} {
+            left: 20px;
+        }
+        @media #{$xs-layout} {
+            left: 20px;
+        }
+        h4 {
+            margin: 0;
+            font-size: 24px;
+            line-height: 35px;
+            @media #{$lg-layout} {
+                font-size: 20px;
+                line-height: 30px;
+            }
+            @media #{$md-layout} {
+                font-size: 20px;
+                line-height: 30px;
+            }
+            @media #{$xs-layout} {
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+    }
+    &:hover {
+        a img {
+            transform: scale(1.05);
+        }
+        .category-content {
+            h4 {
+                letter-spacing: 1px;
+            }
+        }
+        &.default-overlay::before {
+            background-color: #000;
+            opacity: .4;
+            z-index: 1;
+            pointer-events: none;
+        }
+    } 
+}
+
+
+.dot-style-1 {
+    .owl-dots {
+        text-align: center;
+        margin-top: 55px;
+        @media #{$xs-layout} {
+            margin-top: 25px;
+        }
+        .owl-dot {
+            background-color: rgba(0,0,0,0.14);
+            width: 12px;
+            height: 12px;
+            border-radius: 100%;
+            display: inline-block;
+            margin: 0 12px;
+            transition: all .3s ease 0s;
+            &.active , &:hover {
+                background-color: #262626;
+            }
+        }
+    }
+    &.dot-style-mrg1 {
+        .owl-dots {
+            margin-top: 40px;
+            @media #{$xs-layout} {
+                margin-top: 20px;
+            }
+        }
+    }
+    &.active-theme-color {
+        .owl-dots {
+            .owl-dot {
+                background-color: #E7E7E7;
+                margin: 0 6px;
+                &.active , &:hover {
+                    background-color: $theme-color;
+                }
+            }
+        }
+    }
+}
+
+
+.category-wrap-2 {
+    position: relative;
+    overflow: hidden;
+    a {
+        img {
+            width: 100%;
+        }
+    }
+    .category-content-2 {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.5);
+        left: 0;
+        right: 0;
+        bottom: 65px;
+        width: 100%;
+        transition: transform 0.35s;
+        text-align: center;
+        transform: translate3d(0, 100%, 0);
+        opacity: 0;
+        visibility: hidden;
+        padding: 26px 0 26px;
+        @media #{$sm-layout} {
+            padding: 15px 0 15px;
+            bottom: 44px;
+        }
+        h3 {
+            font-size: 18px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin: 0;
+            @media #{$sm-layout} {
+                font-size: 15px;
+            }
+            a {
+                color: #fff;
+            }
+        }
+    }
+    &:hover .category-content-2 {
+        transform: translate3d(0, 91%, 0);
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+
+@media #{$xs-layout} {
+    .category-area {
+        &.pt-40 {
+            padding-top: 15px;
+        }
+        &.pb-85 {
+            padding-bottom: 35px;
+        }
+    }
+}
+
+
+
+
+
+

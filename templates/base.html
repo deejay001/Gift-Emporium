@@ -1,0 +1,399 @@
+<!doctype html>
+{% load static %}
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Gifts Emporium - Buy all sort of giftd and decorations</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/images/favicon.png' %}">
+
+    <!-- CSS
+	============================================ -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'assets/css/vendor/bootstrap.min.css' %}">
+    <!-- Icon Font CSS -->
+    <link rel="stylesheet" href="{% static 'assets/css/vendor/font-awesome.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/vendor/themify.css' %}">
+    <!-- othres CSS -->
+    <link rel="stylesheet" href="{% static 'assets/css/plugins/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/plugins/owl-carousel.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/plugins/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/plugins/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/plugins/jquery-ui.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/plugins/easyzoom.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/plugins/select2.min.css' %}">
+    <!-- Revolution Slider CSS -->
+    <link rel="stylesheet" href="{% static 'assets/js/revolution/css/settings.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/js/revolution/css/navigation.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/js/revolution/custom-setting.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+
+</head>
+
+<body>
+
+    <div class="main-wrapper main-wrapper-3">
+        <header class="header-area">
+            <div class="main-header-wrap bg-black pt-45">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4">
+                            <div class="menu-social-wrap">
+                                <div class="header-social h-social-white">
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-whatsapp"></i></a>
+                                    <a href="#"><i class="fa fa-instagram"></i></a>
+                                    <a href="#"><i class="fa fa-pinterest"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="logo logo-width text-center">
+                                <a href="{% url 'home' %}"><img src="{% static 'assets/images/logo/logo-white.png' %}" alt="logo"></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="lang-cart-search-wrap">
+                                <div class="same-style header-login white-login ml-25">
+                                    <a class="login-button-active" href="#"></a>
+                                </div>
+                                <div class="same-style cart-wrap white-cart-2 ml-30">
+                                    <a href="#" class="cart-active">
+                                    </a>
+                                </div>
+                                <div class="menu-icon white-menu-icon ml-30">
+                                    <a class="clickalbe-menu4-active" href="#"><i class=" ti-align-left "></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-bottom pt-40">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="header-categorie-menu">
+                                    <nav>
+                                        <ul>
+                                            <li><a href="#">..</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="search-content-2">
+                                    <form action="#">
+                                        <input type="text" placeholder="Search Products ...">
+                                        <button><i class="ti-search"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-small-mobile header-small-mobile-ptb">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-6">
+                            <div class="mobile-logo logo-width">
+                                <a href="{% url 'home' %}">
+                                    <img alt="" src="{% static 'assets/images/logo/logo.png' %}">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="mobile-header-right-wrap">
+                                <div class="same-style header-login">
+                                    <a class="login-button-active" href="#"></a>
+                                </div>
+                                <div class="same-style cart-wrap">
+                                    <a href="#" class="cart-active">
+                                    </a>
+                                </div>
+                                <div class="mobile-off-canvas">
+                                    <a class="mobile-aside-button" href="#"><i class=" ti-align-left "></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="clickalbe-menu4-wrapper-active clickable-mainmenu-wrapper4 menu4-toggle-left">
+            <a class="menu4-close"><i class=" ti-close"></i></a>
+            <div class="clickable-mainmenu-wrap clickable-mainmenu-style4">
+                <nav>
+                    <ul>
+                        <li><a href="{% url 'home' %}">Home</a></li>
+                        <li><a href="{% url 'category' 'Shop' %}">Shop</a></li>
+                        <li class="has-sub-menu"><a href="#">Category</a>
+                            <ul class="sub-menu-2">
+                                <li><a href="{% url 'category' 'Shop' %}">General Gifts</a></li>
+                                <li><a href="{% url 'category' 'Promo' %}">Promotional Gifts</a></li>
+                                <li><a href="{% url 'category' 'Souvenirs' %}">Souvenirs</a></li>
+                                <li><a href="{% url 'category' 'Decorations' %}">Decorations</a></li>
+                                <li><a href="{% url 'category' 'hotels' %}">Hotels & Restaurants</a></li>
+                                <li><a href="{% url 'category' 'Utensils' %}">Utensils</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-sub-menu"><a href="#">Pages</a>
+                            <ul class="sub-menu-2">
+                                <li><a href="{% url 'contact' %}">Contact Us</a></li>
+                                <li><a href="#">FAQ</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="mobile-off-canvas-active">
+            <a class="mobile-aside-close"><i class="ti-close"></i></a>
+            <div class="header-mobile-aside-wrap">
+                <div class="mobile-search">
+                    <form class="search-form" action="#">
+                        <input type="text" placeholder="Search entire store…">
+                        <button class="button-search"><i class="ti-search"></i></button>
+                    </form>
+                </div>
+                <div class="mobile-menu-wrap">
+                    <!-- mobile menu start -->
+                    <div class="mobile-navigation">
+                        <!-- mobile menu navigation start -->
+                        <nav>
+                            <ul class="mobile-menu">
+                                <li><a href="{% url 'home' %}">Home</a></li>
+                                <li class="menu-item-has-children "><a href="#">Category</a>
+                                    <ul class="dropdown">
+                                        <li><a href="{% url 'category' 'general' %}">General Gifts</a></li>
+                                        <li><a href="{% url 'category' 'Promo' %}">Promotional Gifts</a></li>
+                                        <li><a href="{% url 'category' 'Souvenirs' %}">Souvenirs</a></li>
+                                        <li><a href="{% url 'category' 'Decorations' %}">Decorations</a></li>
+                                        <li><a href="{% url 'category' 'hotels' %}">Hotels & Restaurants</a></li>
+                                        <li><a href="{% url 'category' 'Utensils' %}">Utensils</a></li>
+
+                                    </ul>
+                                </li>
+                                <li class="menu-item-has-children"><a href="#">Pages</a>
+                                    <ul class="dropdown">
+                                        <li><a href="{% url 'contact' %}">Contact Us</a></li>
+                                        <li><a href="#">FAQ</a></li>
+                                        <li><a href="#">Comming Soon</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                        <!-- mobile menu navigation end -->
+                    </div>
+                    <!-- mobile menu end -->
+                </div>
+                <div class="mobile-social-wrap">
+                    <a class="facebook" href="#"><i class="ti-facebook"></i></a>
+                    <a class="twitter" href="#"><i class="ti-twitter-alt"></i></a>
+                    <a class="pinterest" href="#"><i class="ti-pinterest"></i></a>
+                    <a class="instagram" href="#"><i class="ti-instagram"></i></a>
+                    <a class="google" href="#"><i class="ti-google"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- login start -->
+        <div class="login-wrap-active">
+            <a class="login-close" href="#"><i class="ti-close"></i></a>
+            <div class="header-login-content">
+                <h3>Login</h3>
+                <form action="#">
+                    <div class="single-login-input">
+                        <label>Username or Email Address</label>
+                        <input type="text" value="" size="20">
+                    </div>
+                    <div class="single-login-input">
+                        <label>Password</label>
+                        <input type="password" value="" size="20">
+                    </div>
+                    <div class="login-remember">
+                        <label><input name="rememberme" type="checkbox" value="forever"> Remember Me</label>
+                    </div>
+                    <div class="login-submit">
+                        <input type="submit" value="Log In">
+                    </div>
+                </form>
+                <div class="login-links">
+                    <a href="#">Lost your password?</a>
+                </div>
+            </div>
+        </div>
+        <!-- mini cart start -->
+        <div class="sidebar-cart-active">
+            <div class="sidebar-cart-all">
+                <a class="cart-close" href="#"><i class=" ti-close"></i></a>
+                <div class="cart-content">
+                    <h3>Shopping Cart</h3>
+                    <ul>
+                        <li class="single-product-cart">
+                            <div class="cart-img">
+                                <a href="#"><img src="{% static 'assets/images/cart/cart-1.jpg' %}" alt=""></a>
+                            </div>
+                            <div class="cart-title">
+                                <h4><a href="#">High Collar Jacket</a></h4>
+                                <span>1 × $50.00</span>
+                            </div>
+                            <div class="cart-delete">
+                                <a href="#">×</a>
+                            </div>
+                        </li>
+                        <li class="single-product-cart">
+                            <div class="cart-img">
+                                <a href="#"><img src="{% static 'assets/images/cart/cart-2.jpg' %}" alt=""></a>
+                            </div>
+                            <div class="cart-title">
+                                <h4><a href="#">Long shirt dress</a></h4>
+                                <span>2 × $29.00</span>
+                            </div>
+                            <div class="cart-delete">
+                                <a href="#">×</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="cart-total">
+                        <h4>Subtotal: <span>$150.00</span></h4>
+                    </div>
+                    <div class="cart-checkout-btn">
+                        <a class="btn-hover cart-btn-style" href="cart.html">view cart</a>
+                        <a class="no-mrg btn-hover cart-btn-style" href="checkout.html">checkout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% block content %}
+
+
+
+
+
+		{% endblock %}
+        <footer class="footer-area section-padding-1 bg-black pt-70">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-column footer-width-45 footer-about-center">
+                        <div class="footer-widget mb-40">
+                            <div class="footer-about">
+                                <div class="footer-logo">
+                                    <a href="{% url 'home' %}"><h2 style="color: white">Gift Emporium</h2></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-column footer-width-16">
+                        <div class="footer-widget mb-40">
+                            <div class="footer-title">
+                                <h3>Categories</h3>
+                            </div>
+                            <div class="footer-list">
+                                <ul>
+                                    <li><a href="{% url 'category' 'Decorations' %}">Decorations</a></li>
+                                    <li><a href="{% url 'category' 'Souvenirs' %}">Souvenirs</a></li>
+                                    <li><a href="{% url 'category' 'Promo' %}">Promotional Gifts</a></li>
+                                    <li><a href="{% url 'category' 'hotels' %}">Hotels and Restaurants</a></li>
+                                    <li><a href="{% url 'category' 'Utensils' %}">Utensils</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-column footer-width-16">
+                        <div class="footer-widget mb-40">
+                             <div class="footer-title">
+                                <h3>QUICK LINKS</h3>
+                            </div>
+                            <div class="footer-list">
+                                <ul>
+                                    <li><a href="{% url 'contact' %}">Contact Us</a></li>
+                                    <li><a href="#">FAQs</a></li>
+                                    <li><a href="{% url 'category' 'Shop' %}">Shop</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-column footer-width-22">
+                        <div class="footer-widget mb-40">
+                            <div class="footer-about">
+                                <div class="footer-info footer-info-mrg-none">
+                                    <ul>
+                                        <li><a href="#"> info@gift-emporium.com </a></li>
+                                        <li> +54.854.854.6666 </li>
+                                        <li> 035 Virginia Plaza Suite 331 </li>
+                                    </ul>
+                                </div>
+                                <div class="footer-social footer-social-dec">
+                                    <ul>
+                                        <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+                                        <li><a class="whatsapp" href="#"><i class="fa fa-whatsapp"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright text-center pt-25 pb-10">
+                    <p>© Gift Emporium | All rights reserved </p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- JS
+============================================ -->
+
+    <!-- Modernizer JS -->
+    <script src="{% static 'assets/js/vendor/modernizr-3.6.0.min.js' %}"></script>
+    <!-- Modernizer JS -->
+    <script src="{% static 'assets/js/vendor/jquery-3.3.1.min.js' %}"></script>
+    <!-- Popper JS -->
+    <script src="{% static 'assets/js/vendor/popper.js' %}"></script>
+    <!-- Bootstrap JS -->
+    <script src="{% static 'assets/js/vendor/bootstrap.min.js' %}"></script>
+    <!-- Revolution Slider JS -->
+    <script src="{% static 'assets/js/revolution/js/jquery.themepunch.revolution.min.js' %}"></script>
+    <script src="{% static 'assets/js/revolution/js/jquery.themepunch.tools.min.js' %}"></script>
+    <script src="{% static 'assets/js/revolution/revolution-active.js' %}"></script>
+    <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+    <script src="{% static 'assets/js/revolution/js/extensions/revolution.extension.kenburn.min.js' %}"></script>
+    <script src="{% static 'assets/js/revolution/js/extensions/revolution.extension.carousel.min.js' %}"></script>
+    <script src="{% static 'assets/js/revolution/js/extensions/revolution.extension.slideanims.min.js' %}"></script>
+    <script src="{% static 'assets/js/revolution/js/extensions/revolution.extension.actions.min.js' %}"></script>
+    <script src="{% static 'assets/js/revolution/js/extensions/revolution.extension.layeranimation.min.js' %}"></script>
+    <script src="{% static 'assets/js/revolution/js/extensions/revolution.extension.migration.min.js' %}"></script>
+    <script src="{% static 'assets/js/revolution/js/extensions/revolution.extension.navigation.min.js' %}"></script>
+    <script src="{% static 'assets/js/revolution/js/extensions/revolution.extension.parallax.min.js' %}"></script>
+    <script src="{% static 'assets/js/revolution/js/extensions/revolution.extension.video.min.js' %}"></script>
+    <!-- Others JS -->
+    <script src="{% static 'assets/js/plugins/instafeed.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/jquery-ui.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/jquery-ui-touch-punch.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/magnific-popup.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/owl-carousel.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/slick.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/parallax.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/paraxify.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/countdown.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/scrollup.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/images-loaded.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/isotope.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/easyzoom.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/sticky-sidebar.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/tilt.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/select2.min.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/wow.js' %}"></script>
+    <!-- Main JS -->
+    <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>

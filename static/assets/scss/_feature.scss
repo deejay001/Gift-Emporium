@@ -1,0 +1,127 @@
+/*-------- 14. Feature style ---------*/
+
+.custom-container-3 {
+	width: 1450px;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+    @media #{$xx-layout} {
+        width: 1267px;
+    }
+    @media #{$xl-layout} {
+        width: 1200px;
+    }
+    @media #{$lg-layout} {
+        width: 960px;
+    }
+    @media #{$md-layout} {
+        width: 708px;
+    }
+    @media #{$xs-layout} {
+        width: 100%;
+    }
+}
+
+.feature-wrap {
+    display: flex;
+    @media #{$sm-layout} {
+        justify-content: center;
+    }
+    .feature-icon {
+        flex: 0 0 50px;
+        line-height: 1;
+        margin-right: 25px;
+        @media #{$md-layout} {
+            margin-right: 15px;
+            flex: 0 0 35px;
+        }
+        i {
+            color: $theme-color;
+            font-size: 50px;
+            display: inline-block;
+            @media #{$md-layout} {
+                font-size: 35px;
+            }
+        }
+        &.f-icon-roted {
+           i {
+                transform: rotateY(180deg);
+            } 
+        }
+    }
+    .feature-content {
+        h4 {
+            margin: 0 0 10px;
+            font-size: 20px;
+            font-weight: 500;
+            @media #{$md-layout} {
+                font-size: 18px;
+            }
+        }
+        span {
+            color: #777;
+            font-size: 12px;
+            font-weight: 300;
+            display: block;
+            line-height: 1;
+            @media #{$xx-layout} {
+                line-height: 20px;
+            }
+            @media #{$xl-layout} {
+                line-height: 20px;
+            }
+            @media #{$lg-layout} {
+                line-height: 20px;
+            }
+            @media #{$md-layout} {
+                line-height: 20px;
+            }
+            @media #{$xs-layout} {
+                line-height: 20px;
+            }
+        }
+    }
+}
+
+
+.feature-wrap-2 {
+    display: flex;
+    @media #{$sm-layout} {
+        justify-content: center;
+    }
+    .feature-icon-2 {
+        flex: 0 0 56px;
+        margin-right: 24px;
+        i {
+            font-size: 24px;
+            width: 56px;
+            height: 56px;
+            line-height: 56px;
+            border-radius: 100%;
+            background-color: #fff;
+            text-align: center;
+            display: inline-block;
+            color: #262626;
+        }
+    }
+    .feature-content-2 {
+        h4 {
+            font-size: 16px;
+            margin: 0 0 13px;
+        }
+        span {
+            font-size: 12px;
+            color: #777777;
+            font-weight: 300;
+        }
+    }
+}
+
+
+
+
+
+
+
+

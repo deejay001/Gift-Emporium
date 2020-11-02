@@ -1,0 +1,349 @@
+/*-------- 11. Subscribe style ---------*/
+
+.subscribe-wrap-3 {
+    h2 {
+        font-size: 36px;
+        letter-spacing: 4px;
+        line-height: 1;
+        font-family: $playfairdisplay;
+        margin: 0 0 16px;
+        @media #{$xs-layout} {
+            font-size: 24px;
+            letter-spacing: 0px;
+            margin: 0 0 10px;
+        }
+    }
+    p {
+        font-size: 16px;
+        color: #777777;
+        font-weight: 700;
+        margin: 0;
+    }
+    .subscribe-form-3 {
+        margin: 35px 10px 0;
+        @media #{$xs-layout} {
+            margin: 20px 10px 0;
+        }
+        .mc-form-3 {
+            position: relative;
+            input {
+                background-color: transparent;
+                border: none;
+                border-bottom: 1px solid #e0e0e8;
+                height: 38px;
+                font-size: 12px;
+                color: #777777;
+                padding: 2px 70px 2px 0;
+            }
+            .mc-news {
+                display: none;
+            }
+            .clear-3 {
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                input {
+                    width: auto;
+                    padding: 0;
+                    height: auto;
+                    border: none;
+                    color: #262626;
+                    &:hover {
+                        color: $theme-color;
+                    }
+                }
+            }
+        }
+    }
+    &.scrb-font-width-dec {
+        p {
+            font-weight: 400;
+        }
+    }
+    &.scrb-font-width-dec2 {
+        h2 {
+            font-size: 30px;
+            letter-spacing: 0px;
+            @media #{$xs-layout} {
+                font-size: 23px;
+            }
+        }
+        p {
+            font-weight: 400;
+        }
+    }
+    &.white-subscribe-wrap-3 {
+        h2 {
+            color: #fff;
+        }
+        p {
+            color: #fff;
+        }
+        .subscribe-form-3 {
+            .mc-form-3 {
+                input {
+                    border-bottom: 1px solid #fff;
+                    color: #fff;
+                    &::-webkit-input-placeholder {
+                        color: #fff;
+                        opacity: 1;
+                    }
+                }
+                .clear-3 {
+                    input {
+                        color: #fff;
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+    &.scrb-hm14 {
+        img {
+            width: 34px;
+        }
+        h2 {
+            font-family: $dancingscript;
+            letter-spacing: 0px;
+            margin: 9px 0 7px;
+        }
+        p {
+            font-weight: 300;
+        }
+        .subscribe-form-3 {
+            margin: 40px 10px 0;
+            .mc-form-3 {
+                input {
+                    border-bottom: 1px solid #000;
+                    font-weight: 300;
+                } 
+                .clear-3 {
+                    input {
+                        border-bottom: none;
+                    }
+                }
+            }
+        }
+    }
+    &.scrb-hm15 {
+        h2 {
+            font-family: $dancingscript;
+            letter-spacing: 0px;
+            margin: 0px 0 18px;
+            font-size: 46px;
+            @media #{$xs-layout} {
+                font-size: 35px;
+            }
+        }
+        p {
+            font-weight: 400;
+        }
+        .subscribe-form-3 {
+            margin: 0px 10px 0;
+            .mc-form-3 {
+                input {
+                    border-bottom: 1px solid #000;
+                    font-weight: 300;
+                } 
+                .clear-3 {
+                    input {
+                        border-bottom: none;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+    &.scrb-hm17 {
+        h2 {
+            font-family: $caveat;
+            letter-spacing: 0px;
+            margin: 0px 0 13px;
+            font-size: 66px;
+            @media #{$xs-layout} {
+                font-size: 35px;
+            }
+        }
+        p {
+            font-weight: 400;
+        }
+        .subscribe-form-3 {
+            margin: 40px 10px 0;
+        }
+    }
+}
+
+.subscribe-parallax-bg {
+    background-image: url("../../assets/images/banner/subscribe-banner.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.subscribe-bg {
+	background-color: #d5ecf1;
+	background-image: url("../../assets/images/banner/newletter-bg15.png");
+	background-position: top right;
+	background-repeat: repeat-x;
+}
+
+
+.subscribe-wrap-4 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    @media #{$xs-layout} {
+        display: block;
+        text-align: center;
+    }
+    .subscribe-content-4 {
+        flex: 0 0 39.412%;
+        @media #{$xs-layout} {
+            flex: 0 0 100%;
+        }
+        h2 {
+            font-size: 36px;
+            margin: 0;
+            line-height: 1;
+            @media #{$lg-layout} {
+                font-size: 30px;
+            }
+            @media #{$md-layout} {
+                font-size: 24px;
+            }
+            @media #{$xs-layout} {
+                font-size: 25px;
+                margin: 0 0 15px;
+            }
+        }
+    }
+    .subscribe-form-4 {
+        flex: 0 0 60.588%;
+        @media #{$xs-layout} {
+            flex: 0 0 100%;
+        }
+        .mc-form-4 {
+            position: relative;
+            input {
+                color: #262626;
+                font-weight: 500;
+                background-color: transparent;
+                border: 1px solid #262626;
+                height: 76px;
+                padding: 5px 130px 5px 30px;
+                &::-webkit-input-placeholder {
+                    color: #262626 !important;
+                    opacity: 1 !important;
+                }
+                @media #{$xs-layout} {
+                    padding: 5px 103px 5px 15px;
+                    height: 70px;
+                }
+            }
+            .mc-news {
+                display: none;
+            }
+            .clear-4 {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 30px;
+                @media #{$xs-layout} {
+                    right: 10px;
+                }
+                input {
+                    width: auto;
+                    border: none;
+                    padding: 10px;
+                    &:hover {
+                        color: $theme-color;
+                    }
+                }
+            }
+        }
+    }
+    &.subscribe-hm18 {
+        .subscribe-content-4 {
+            h2 {
+                font-family: $robotocondensed;
+                letter-spacing: 1.5px;
+                text-transform: uppercase;
+                @media #{$md-layout} {
+                    letter-spacing: 0px;
+                }
+            }
+        }
+        .subscribe-form-4 {
+            .mc-form-4 {
+                input {
+                    font-family: $robotocondensed;
+                    padding: 5px 130px 5px 20px;
+                }
+                .clear-4 {
+                    right: 20px;
+                    input {
+                        font-family: $robotocondensed;
+                        font-weight: 700;
+                        padding: 10px;
+                        &:hover {
+                            color: #666;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media #{$lg-layout} {
+    .subscribe-area {
+        &.pt-190 {
+            padding-top: 115px;
+        }
+        &.pb-200 {
+            padding-bottom: 120px;
+        }
+    }
+}
+
+@media #{$md-layout} {
+    .subscribe-area {
+        &.pt-190 {
+            padding-top: 115px;
+        }
+        &.pb-200 {
+            padding-bottom: 120px;
+        }
+    }
+}
+
+
+@media #{$xs-layout} {
+    .subscribe-area {
+        &.pt-190 {
+            padding-top: 55px;
+        }
+        &.pt-70 {
+            padding-top: 20px;
+        }
+        &.pb-200 {
+            padding-bottom: 60px;
+        }
+    }
+    .subscribe-area-4 {
+        &.pt-70 {
+            padding-top: 45px;
+        }
+        &.pb-70 {
+            padding-bottom: 50px;
+        }
+    }
+}
+
+
+
+
+
+

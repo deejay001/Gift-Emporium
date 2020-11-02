@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+<div class="breadcrumb-area border-top-2 pt-50 pb-50">
+            <div class="custom-container-6">
+                <div class="breadcrumb-content">
+                    <ul>
+                        <li><a href="{% url 'home' %}">Home </a></li>
+                        <li><span> > </span></li>
+                        <li><a href="#">{{ pro.category }}</a></li>
+                        <li><span> > </span></li>
+                        <li class="active">{{ pro.title }}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="product-details-area pb-90">
+            <div class="custom-container-6">
+                <div class="row">
+                    <div class="col-pro-60">
+                        <div class="product-details-tab">
+                            <div class="product-dec-right pro-dec-big-img-slider">
+                                <div class="easyzoom-style">
+                                    <div class="easyzoom easyzoom--overlay">
+                                        <a href="{{ pro.photo.url }}">
+                                            <img src="{{ pro.photo.url }}" alt="">
+                                        </a>
+                                    </div>
+                                    <a class="easyzoom-pop-up img-popup" href="{{ pro.photo.url }}"><i class=" ti-fullscreen "></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-pro-40">
+                        <div class="pl-35 product-details-content quickview-content">
+                            <h2>{{ pro.title }}</h2>
+                            <div class="quickview-ratting-review">
+                                <div class="quickview-ratting-wrap">
+                                    <div class="quickview-ratting">
+                                        <i class="yellow fa fa-star"></i>
+                                        <i class="yellow fa fa-star"></i>
+                                        <i class="yellow fa fa-star"></i>
+                                        <i class="yellow fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                    <a href="#"> (1 customer review)</a>
+                                </div>
+                                <div class="quickview-stock">
+                                    <span><i class="fa fa-check-circle-o"></i> in stock</span>
+                                </div>
+                            </div>
+                            <h3>N {{ pro.prize }}</h3>
+                            <div class="quickview-action-wrap">
+                                <div class="quickview-cart">
+                                    <a title="Add to cart" href="#"><i class="fa fa-whatsapp"></i> Buy Now</a>
+                                </div>
+                                <div class="quickview-quality">
+                                    <div class="cart-plus-minus">
+                                        <input class="cart-plus-minus-box" type="text" name="qtybutton" value="2">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="quickview-meta">
+                                <span>Categories: <a href="#">{{ pro.category }}</a></span>
+                            </div>
+                            <div class="default-social">
+                                <ul>
+                                    <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a class="youtube" href="#"><i class="fa fa-whatsapp"></i></a></li>
+                                    <li><a class="dribbble" href="#"><i class="fa fa-google-plus"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+{% endblock content %}

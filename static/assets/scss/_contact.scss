@@ -1,0 +1,149 @@
+/*-------- 27. Contact style ---------*/
+
+.contact-form-area {
+    margin-right: 57px;
+    @media #{$lg-layout} {
+        margin-right: 0px;
+    }
+    @media #{$md-layout} {
+        margin-right: 0px;
+    }
+    @media #{$xs-layout} {
+        margin-right: 0px;
+    }
+    h2 {
+        font-weight: 600;
+        font-size: 36px;
+        margin: 0 0 56px;
+        @media #{$xs-layout} {
+            font-size: 30px;
+            margin: 0 0 20px;
+        }
+    }
+    input , textarea  , select {
+        height: 58px;
+        background-color: transparent;
+        border: 1px solid #777;
+        color: #5d5d5d;
+        font-size: 12px;
+        padding: 2px 20px;
+        margin-bottom: 20px;
+        &::-webkit-input-placeholder {
+            color: #5d5d5d;
+            opacity: 1;
+        }
+    }
+    textarea { 
+        padding: 20px 20px;
+        height: 260px;
+        @media #{$md-layout} {
+            height: 160px
+        }
+        @media #{$xs-layout} {
+            height: 120px
+        }
+    }
+    select { 
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='32' height='24' viewBox='0 0 32 24'><polygon points='0,0 32,0 16,24' style='fill: rgb%28138, 138, 138%29'></polygon></svg>");
+        background-size: 9px 6px;
+        background-position: right -10px center;
+        background-origin: content-box;
+        background-repeat: no-repeat;
+        max-width: 100%;
+    }
+    button {
+        &.submit {
+            background-color: #181818;
+            color: #fff;
+            padding: 15px 45px 15px;
+            border: none;
+            &:hover {
+                background-color: $theme-color;
+            }
+        }
+    }
+}
+
+.contact-info-area {
+    @media #{$xs-layout} {
+        margin: 30px 0 0px;
+    }
+    h2 {
+        font-weight: 600;
+        font-size: 36px;
+        margin: 0 0 56px;
+        @media #{$xs-layout} {
+            font-size: 30px;
+            margin: 0 0 20px;
+        }
+    }
+    .contact-info-top {
+        .sin-contact-info-wrap {
+            .contact-address {
+                display: flex;
+                align-items: center;
+                margin: 0 0 8px;
+                i {
+                    color: #818a91;
+                    font-size: 20px;
+                }
+                span {
+                    font-weight: 600;
+                    margin: 0 0 0 14px;
+                    display: inline-block;
+                }
+            }
+            p {
+                font-size: 12px;
+                font-weight: 300;
+                margin: 0;
+            }
+        }
+    }
+    .contact-info-bottom {
+        border-top: 1px solid rgba(119,119,119,0.2);
+        margin-top: 34px;
+        padding-top: 33px;
+        ul {
+            li {
+                font-size: 12px;
+                margin: 0 0 15px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                i {
+                    font-size: 20px;
+                    position: relative;
+                    top: 5px;
+                    margin-right: 14px;
+                }
+            }
+        }
+        .contact-info-social {
+            margin: 40px 0 0;
+            a {
+                font-size: 20px;
+                margin-right: 17px;
+            }
+        }
+    }
+}
+
+#contact-2 {
+	height: 465px;
+    @media #{$md-layout} {
+        height: 365px;
+    }
+    @media #{$xs-layout} {
+        height: 365px;
+    }
+}
+
+
+
+
+
+
+

@@ -1,0 +1,382 @@
+/*-------- 5. Section title style ---------*/
+
+.section-title-1 {
+    h2 {
+        font-family: $playfairdisplay;
+        font-size: 36px;
+        font-weight: 400;
+        letter-spacing: 4px;
+        text-align: center;
+        margin: 0 0 24px;
+        line-height: 32px;
+        @media #{$xs-layout} {
+            font-size: 24px;
+            margin: 0 0 8px;
+            line-height: 32px;
+        }
+    }
+    p {
+        color: #777777;
+        font-size: 16px;
+        font-weight: 300;
+        text-align: center;
+        margin: 0;
+    }
+}
+
+.section-title-2 {
+    h2 {
+        font-family: $playfairdisplay;
+        font-size: 36px;
+        font-weight: 400;
+        letter-spacing: 4px;
+        text-align: center;
+        margin: 0 0 0px;
+        line-height: 32px;
+        @media #{$xs-layout} {
+            font-size: 24px;
+            margin: 0 0 8px;
+            line-height: 32px;
+        }
+    }
+}
+
+
+.section-title-3 {
+    h2 {
+        font-family: $playfairdisplay;
+        font-size: 36px;
+        font-weight: 400;
+        letter-spacing: 4px;
+        text-align: center;
+        margin: 0 0 0px;
+        line-height: 32px;
+        display: inline-block;
+        padding: 25px 65px 29px 70px;
+        border-style: solid;
+        border-width: 1px 1px 1px 1px;
+        border-color: rgba(0,0,0,.3);
+        @media #{$md-layout} {
+            font-size: 28px;
+        }
+        @media #{$xs-layout} {
+            font-size: 20px;
+            line-height: 32px;
+            padding: 9px 10px 10px 15px;
+        }
+    }
+    @media #{$xs-layout} {
+        &.mb-70 {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.section-title-4 {
+    h2 {
+        font-family: $playfairdisplay;
+        font-size: 36px;
+        font-weight: 400;
+        letter-spacing: 4px;
+        text-align: center;
+        margin: 0 0 30px;
+        line-height: 32px;
+        @media #{$xs-layout} {
+            line-height: 25px;
+            font-size: 25px;
+            margin: 0 0 10px;
+            letter-spacing: 1px;
+        }
+    }
+    p {
+        font-size: 16px;
+        font-weight: 300;
+        color: #777;
+        line-height: 1.9em;
+        margin: 0 auto;
+        width: 65%;
+        @media #{$md-layout} {
+            width: 82%;
+        }
+        @media #{$xs-layout} {
+            width: 100%;
+        }
+    }
+    @media #{$xs-layout} {
+        &.mb-60 {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.section-title-5 {
+    h2 {
+        font-family: $playfairdisplay;
+        font-size: 36px;
+        font-weight: 400;
+        letter-spacing: 4px;
+        text-align: center;
+        margin: 0 0 0px;
+        line-height: 32px;
+        text-transform: uppercase;
+        position: relative;
+        display: inline-block;
+        &:before {
+            position: absolute;
+            content: "";
+            left: -170px;
+            top: 17px;
+            width: 100px;
+            height: 1px;
+            background-color: #777;
+            @media #{$xs-layout} {
+                left: -40px;
+                width: 30px;
+            }
+            @media #{$sm-layout} {
+                left: -70px;
+                width: 50px;
+            }
+        }
+        &:after {
+            position: absolute;
+            content: "";
+            right: -170px;
+            top: 17px;
+            width: 100px;
+            height: 1px;
+            background-color: #777;
+            @media #{$xs-layout} {
+                right: -40px;
+                width: 30px;
+            }
+            @media #{$sm-layout} {
+                right: -70px;
+                width: 50px;
+            }
+        }
+        @media #{$xs-layout} {
+            line-height: 25px;
+            font-size: 25px;
+            margin: 0 0 10px;
+            letter-spacing: 1px;
+        }
+    }
+}
+
+.section-title-6 {
+    h2 {
+        font-family: $playfairdisplay;
+        font-size: 30px;
+        font-weight: 400;
+        text-align: center;
+        margin: 0 0 0px;
+        line-height: 28px;
+        text-transform: uppercase;
+        @media #{$xs-layout} {
+            font-size: 24px;
+            margin: 0 0 8px;
+            line-height: 32px;
+        }
+    }
+}
+
+.section-title-7 {
+    img {
+        margin: 0 auto;
+        width: 34px;
+    }
+    h2 {
+        font-family: $dancingscript;
+        font-size: 36px;
+        text-align: center;
+        margin: 17px 0 0px;
+        line-height: 1;
+        @media #{$xs-layout} {
+            font-size: 25px;
+            margin: 15px 0 8px;
+            line-height: 22px;
+        }
+    }
+    @media #{$xs-layout} {
+        &.mb-50 {
+            margin-bottom: 30px;
+        }
+    }
+}
+.section-title-8 {
+    h2 {
+        font-family: $dancingscript;
+        font-size: 46px;
+        text-align: center;
+        margin: 0px;
+        @media #{$xs-layout} {
+            font-size: 35px;
+            line-height: 22px;
+        }
+    }
+    @media #{$xs-layout} {
+        &.mb-50 {
+            margin-bottom: 30px;
+        }
+    }
+}
+.section-title-9 {
+    h2 {
+        font-size: 46px;
+        text-align: center;
+        margin: 0px;
+        line-height: 1;
+        @media #{$xs-layout} {
+            font-size: 29px;
+            line-height: 35px;
+        }
+    }
+    @media #{$xs-layout} {
+        &.mb-60 {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.section-title-10 {
+    h2 {
+        font-size: 66px;
+        text-align: center;
+        margin: 0px;
+        line-height: 55px;
+        font-family: $caveat;
+        @media #{$xs-layout} {
+            font-size: 40px;
+            line-height: 35px;
+        }
+    }
+    @media #{$xs-layout} {
+        &.mb-60 {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.section-title-11 {
+    h2 {
+        font-size: 46px;
+        text-align: center;
+        margin: 0px;
+        line-height: 35px;
+        font-family: $robotocondensed;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        position: relative;
+        padding: 0 0 30px;
+        &::before {
+            position: absolute;
+            background-color: #bdbd74;
+            z-index: 1;
+            width: 80px;
+            height: 2px;
+            content: "";
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        @media #{$xs-layout} {
+            font-size: 27px;
+            line-height: 19px;
+            letter-spacing: 1px;
+            padding: 0 0 10px;
+        }
+    }
+    @media #{$xs-layout} {
+        &.mb-50 {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.section-title-12 {
+    h2 {
+        font-family: $playfairdisplay;
+        font-size: 36px;
+        font-weight: 700;
+        margin: 0 0 0px;
+        line-height: 33px;
+        @media #{$xs-layout} {
+            font-size: 24px;
+            margin: 0 0 8px;
+            line-height: 32px;
+        }
+    }
+    @media #{$xs-layout} {
+        &.mb-50 {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.section-title-13 {
+    h2 {
+        font-family: $playfairdisplay;
+        font-size: 36px;
+        font-weight: 700;
+        letter-spacing: 4px;
+        text-align: center;
+        margin: 0 0 0px;
+        line-height: 32px;
+        text-transform: uppercase;
+        position: relative;
+        display: inline-block;
+        &:before {
+            position: absolute;
+            content: "";
+            left: -97px;
+            top: 17px;
+            width: 47px;
+            height: 2px;
+            background-color: #262626;
+            @media #{$xs-layout} {
+                left: -40px;
+                width: 30px;
+                top: 14px;
+            }
+            @media #{$sm-layout} {
+                left: -70px;
+                width: 50px;
+            }
+        }
+        &:after {
+            position: absolute;
+            content: "";
+            right: -97px;
+            top: 17px;
+            width: 47px;
+            height: 2px;
+            background-color: #262626;
+            @media #{$xs-layout} {
+                right: -40px;
+                width: 30px;
+                top: 14px;
+            }
+            @media #{$sm-layout} {
+                right: -70px;
+                width: 50px;
+            }
+        }
+        @media #{$xs-layout} {
+            line-height: 25px;
+            font-size: 25px;
+            letter-spacing: 1px;
+        }
+    }
+    @media #{$xs-layout} {
+        &.mb-50 {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+
+
+
+
